@@ -10,6 +10,11 @@
         background-size: cover;
         height: 100vh;
         text-align: center;
+        &--mask{
+            background-color: #36253d27;
+            background-size: cover;
+            height: 100vh;
+        }
     }
 
     &__logo {
@@ -82,7 +87,6 @@
         &>h3 {
             font-size: 36px;
             font-style: italic;
-
         }
 
         &>h6 {
