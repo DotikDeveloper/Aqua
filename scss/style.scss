@@ -67,6 +67,7 @@
             max-width: 50%;
             flex-direction: column;
             text-align: left;
+            align-items: flex-start;
         }
 
         &--img {
@@ -75,14 +76,23 @@
 
         &>h1 {
             font-size: 56px;
+            font-family: Lato;
         }
 
         &>h3 {
             font-size: 36px;
+            font-style: italic;
+
         }
 
         &>h6 {
             font-size: 24px;
+            font-style: italic;
+            color: rgb(255, 255, 255);
+        }
+
+        &>.header__text {
+            padding: 10px;
         }
     }
 
@@ -101,6 +111,7 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         position: relative;
+        margin: 25px auto;
 
     }
 
@@ -137,6 +148,6 @@
     -o-border-radius: 15px;
 }
 
-.bg__shadow{
+.bg__shadow {
     box-shadow: 0px 0px 10px #dcdcdf80;
 }
