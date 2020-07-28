@@ -16,7 +16,6 @@
         width: 250px;
         padding: 15px;
         border-radius: 15px;
-        background-color: rgba(255, 255, 255, 0.247);
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
@@ -32,10 +31,13 @@
     &__text {
         font-size: 18px;
         color: white;
+        text-align: left;
 
         &--number {
             font-size: 24px;
         }
+
+
     }
 
     &__fa-phone {
@@ -62,14 +64,25 @@
         align-items: center;
 
         &--left {
-            display: flex;
+            max-width: 50%;
             flex-direction: column;
             text-align: left;
         }
 
-
         &--img {
             max-height: 80vh;
+        }
+
+        &>h1 {
+            font-size: 56px;
+        }
+
+        &>h3 {
+            font-size: 36px;
+        }
+
+        &>h6 {
+            font-size: 24px;
         }
     }
 
@@ -88,33 +101,42 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         position: relative;
-        transform: all 3s linear;
-        -webkit-transform: all 3s linear;
-        -moz-transform: all 3s linear;
-        -ms-transform: all 3s linear;
-        -o-transform: all 3s linear;
-}
+
+    }
 
     &__btn:hover {
-        //box-shadow: 0px 5px 0px #15159D;
-        //top: 2px;        
-        background-color: #4141f1;  
-        opacity: 0.8;     
+        box-shadow: 0px 5px 0px #15159D;
+        top: 2px;
+        background-color: #4141f1;
+        opacity: 0.9;
     }
 
     &__btn:focus {
         box-shadow: 0px 3px 0px #15159D;
         top: 4px;
-        opacity: 0.95; 
-        color: white;              
+        opacity: 0.95;
     }
 }
 
-.fa {}
+//.fa {}
 
-.fa-phone {}
+//.fa-phone {}
 
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+.bg__mask {
+    background-color: #3f3b3b56;
+    border-radius: 15px;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.bg__shadow{
+    box-shadow: 0px 0px 10px #dcdcdf80;
 }
