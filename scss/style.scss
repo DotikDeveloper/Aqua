@@ -141,9 +141,43 @@
     }
 }
 
-//.fa {}
+// -----------HEADER END------------//
 
-//.fa-phone {}
+// MAIN
+
+//PAGE2
+.main{
+    &__body {
+    }
+}
+.page{
+    &__body {
+    }
+    &__about {
+    }
+    &__colume {
+        &--center {
+        }
+    }
+}
+
+.body {
+    &__title {
+        &--cursive {
+        }
+    }
+}
+
+.colume {
+    &__title {
+    }
+    &__img--center {
+    }
+}
+//.far {
+//}
+//.fa-check-circle {
+//}
 
 .container {
     width: 1200px;
