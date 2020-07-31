@@ -8,12 +8,29 @@
 }
 
 .view {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
+    background: url("../media/beverages-2914497_1920.jpg")no-repeat center center;
     background-size: cover;
 }
 
+.view__block {
+    background: rgba(0, 0, 0, 0.281);
+    margin-top: 90px;
+    padding: 50px;
+    box-shadow: 0px 0px 15px #d4cece;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
 .navbar {
-    background-color: transparent;
+    background-color: transparent;    
+}
+
+.navbar-text--left{
+    border-left: 2px solid rgba(255,255,255,.5);
+    padding-left: 15px;
 }
 
 .top-nav-collapse {
