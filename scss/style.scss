@@ -3,3 +3,28 @@
 @import '_color.scss';
 @import '_nullstyle.scss';
 
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: $pallete-primary;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: $pallete-primary;
+    }
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
