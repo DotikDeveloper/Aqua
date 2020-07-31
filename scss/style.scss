@@ -3,6 +3,10 @@
 @import '_color.scss';
 @import '_nullstyle.scss';
 
+*{
+    color: $pallete-fonts;
+}
+
 .view {
     background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
     background-size: cover;
@@ -13,12 +17,12 @@
 }
 
 .top-nav-collapse {
-    background-color: $pallete-primary;
+    background-color: $pallete-primary-dark;
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: $pallete-primary;
+        background-color: $pallete-primary-dark;
     }
 }
 
