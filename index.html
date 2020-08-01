@@ -25,7 +25,8 @@
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./media/logo-ru-hd.png" alt="Аквамир" width="150px"></a>
+                <a class="navbar-brand" href="#pageHome"><img src="./media/logo-ru-hd.png" alt="Аквамир"
+                        width="150px"></a>
                 <div class="navbar-text navbar-text--left">Продажа и установка пурифайеров</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -35,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Пурифайер</a>
+                            <a class="nav-link" href="#pageAbout">Пурифайер</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Каталог</a>
@@ -59,26 +60,25 @@
                 </div>
             </div>
         </nav>
-
-        <div class="view intro-2">
+        <!-- start page block -->
+        <div class="view page__home" id="pageHome">
             <div class="full-bg-img">
-                <div class="mask rgba-stylish-slight flex-center">
+                <div class="mask rgba-blue-grey-light flex-center">
                     <div class="container white-text wow fadeInUp">
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-12">
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-md-5 d-flex align-items-center">
                                         <div class="view__block">
-                                            <h1 class="font-weight-bold">Бесперебойное обеспечение чистой питьевой водой</h1>
-                                            <p> на работе и дома<br> Без бутылей</p>
-                                            <button type="button" class="mt-2 btn btn-orange">Download</button>
+                                            <h1 class="font-weight-bold text-warning text-uppercase">Бесперебойное
+                                                обеспечение чистой питьевой водой</h1>
+                                            <p > <i class="text-white mt-2">На работе и дома. Без бутылей</i></p>
+                                            <button type="button" class="mt-4 mx-0 btn btn-orange">Заказать</button>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
-
-                                        <img src="https://mdbootstrap.com/img/illustrations/graphics(4).png"
-                                            class="img-fluid" alt="smaple image">
-
+                                        <img src="./media/bg__header.png" class="img-fluid  img__header--center"
+                                            alt="smaple image">
                                     </div>
                                 </div>
                             </div>
@@ -87,34 +87,53 @@
                 </div>
             </div>
         </div>
+        <!-- end page block -->
     </header>
     <!--Main Navigation-->
     <!--Main Layout-->
-    <main class="text-center py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-                        amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt
-                        mollit anim id est laborum.</p>
-
+    <main>
+        <div class="page container-fluide">
+            <!-- start page block -->
+            <div id="pageAbout" class="page__block page__block--about">
+                <h2 class="page__title">Что такое <span class="page__title--cursive">пурифайер</span></h2>
+                <div class="col-md-4">
+                    <row>
+                        <i class="far fa-check-circle"></i>
+                        <h4>Здоровье</h4>
+                        <p>чистая питьевая вода - основа долголетия</p>
+                    </row>
+                    <row><i class="far fa-check-circle"></i>
+                        <h4>Безлимитная вода</h4>
+                        <p>питьевая вода в неограниченном количестве в любое время дня и ночи</p>
+                    </row>
+                    <row>
+                        <i class="far fa-check-circle"></i>
+                        <h4>Качество</h4>
+                        <p>4 фильтра очищают водопроводную воду, сохраняя полезный микроэлементый состав</p>
+                    </row>
                 </div>
+                <div class="col-md-4">
+                    <img class="page__img--center" src="./media/colume__img--center.png" alt="пурифайер - источник чистой воды">
+                </div>
+                <div class="col-md-4">
+                    <row>
+                        <i class="far fa-check-circle"></i>
+                        <h4>Свобода</h4>
+                        <p>от поднимания тяжестей, ожидания доставки и контроля оплаты за воду</p>
+                    </row>
+                    <row><i class="far fa-check-circle"></i>
+                        <h4>Выгода</h4>
+                        <p>литр воды из пурифайера дешевле воды из кулера в 10 раз!</p>
+                    </row>
+                    <row>
+                        <i class="far fa-check-circle"></i>
+                        <h4>Дизайн</h4>
+                        <p>стильный, современный интерьер и никаких потёртых бутылок!</p>
+                    </row>
+                </div>
+
             </div>
+            <!-- end page block -->
         </div>
     </main>
     <!--Main Layout-->
