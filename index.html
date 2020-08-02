@@ -27,7 +27,7 @@
             <div class="container">
                 <a class="navbar-brand" href="#pageHome"><img src="./media/logo-ru-hd.png" alt="Аквамир"
                         width="150px"></a>
-                <div class="navbar-text navbar-text--left">Продажа и установка пурифайеров</div>
+                <div class="navbar-text navbar-text--left paragraph__cursive">Продажа и установка пурифайеров</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -70,9 +70,10 @@
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-md-5 d-flex align-items-center">
                                         <div class="view__block">
-                                            <h1 class="font-weight-bold text-warning text-uppercase">Бесперебойное
+                                            <h1 class="font-weight-bold page__title text-uppercase">Бесперебойное
                                                 обеспечение чистой питьевой водой</h1>
-                                            <p > <i class="text-white mt-2">На работе и дома. Без бутылей</i></p>
+                                            <p> <i class="text-white paragraph__cursive mt-2">На работе и дома. Без
+                                                    бутылей</i></p>
                                             <button type="button" class="mt-4 mx-0 btn btn-orange">Заказать</button>
                                         </div>
                                     </div>
@@ -94,44 +95,60 @@
     <main>
         <div class="page container-fluide">
             <!-- start page block -->
-            <div id="pageAbout" class="page__block page__block--about">
-                <h2 class="page__title">Что такое <span class="page__title--cursive">пурифайер</span></h2>
-                <div class="col-md-4">
-                    <row>
-                        <i class="far fa-check-circle"></i>
-                        <h4>Здоровье</h4>
-                        <p>чистая питьевая вода - основа долголетия</p>
-                    </row>
-                    <row><i class="far fa-check-circle"></i>
-                        <h4>Безлимитная вода</h4>
-                        <p>питьевая вода в неограниченном количестве в любое время дня и ночи</p>
-                    </row>
-                    <row>
-                        <i class="far fa-check-circle"></i>
-                        <h4>Качество</h4>
-                        <p>4 фильтра очищают водопроводную воду, сохраняя полезный микроэлементый состав</p>
-                    </row>
-                </div>
-                <div class="col-md-4">
-                    <img class="page__img--center" src="./media/colume__img--center.png" alt="пурифайер - источник чистой воды">
-                </div>
-                <div class="col-md-4">
-                    <row>
-                        <i class="far fa-check-circle"></i>
-                        <h4>Свобода</h4>
-                        <p>от поднимания тяжестей, ожидания доставки и контроля оплаты за воду</p>
-                    </row>
-                    <row><i class="far fa-check-circle"></i>
-                        <h4>Выгода</h4>
-                        <p>литр воды из пурифайера дешевле воды из кулера в 10 раз!</p>
-                    </row>
-                    <row>
-                        <i class="far fa-check-circle"></i>
-                        <h4>Дизайн</h4>
-                        <p>стильный, современный интерьер и никаких потёртых бутылок!</p>
-                    </row>
-                </div>
+            <div class="container">
+                <div id="pageAbout" class="page__block page__block--about mt-5">
+                    <h2 class="page__title">Что такое <span class="page__title--cursive">пурифайер</span></h2>
+                    <!-- page__colume -->
+                    <div class="page__colume row d-flex justify-content-center">
 
+                        <!-- colume__left -->
+                        <div class="col-md-4 colume colume__left">
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Здоровье</h4>
+                                <p class="colume__text">чистая питьевая вода - основа долголетия</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Безлимитная вода</h4>
+                                <p class="colume__text">питьевая вода в неограниченном количестве в любое время дня и ночи</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Качество</h4>
+                                <p class="colume__text">4 фильтра очищают водопроводную воду, сохраняя полезный микроэлементый состав</p>
+                            </div>                            
+                        </div>
+
+                        <!--colume__center-->
+                        <div class="col-md-4 colume colume__center">
+                            <img class="colume__img colume__img--center img-fluid" src="./media/colume__img--center.png"
+                                alt="пурифайер - источник чистой воды">
+                        </div>
+
+                        <!-- colume__right -->
+                        <div class="col-md-4 colume colume__right">
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Свобода</h4>
+                                <p class="colume__text">от поднимания тяжестей, ожидания доставки и контроля оплаты за воду</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Выгода</h4>
+                                <p class="colume__text">литр воды из пурифайера дешевле воды из кулера в 10 раз!</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Дизайн</h4>
+                                <p class="colume__text">стильный, современный интерьер и никаких потёртых бутылок!</p>
+                            </div>                            
+                        </div>                       
+                        
+                    </div>
+                    <!-- page__colume end -->
+
+                </div>
             </div>
             <!-- end page block -->
         </div>

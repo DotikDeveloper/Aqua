@@ -7,7 +7,8 @@
     color: $pallete-fonts--dark;
 }
 
-
+main{
+}
 
 .view {
     background: url("../media/bg-6.jpg")no-repeat center center;
@@ -62,8 +63,9 @@
 html,
 body,
 header,
-.view {
-  height: 100%;
+.view,
+.page {
+  height: 100vh;
 }
 
 //header
@@ -82,3 +84,65 @@ header,
         position: fixed;
     }
 }
+
+//-------------------------PAGE----------------------//
+
+.page {
+    &__block {
+        &--about {
+        }
+    }
+    &__title {
+        font-size: 48px;
+        color: $pallete-secondary-light;
+        &--cursive {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+        }
+    }
+    &__img--center {
+    }
+}
+
+//-------------------------PAGE END----------------------//
+
+//----------------------COLUME----------------------//
+
+.page__colume {
+}
+.row {
+}
+.d-flex {
+}
+.justify-content-center {
+}
+.col-md-4 {
+}
+.colume {
+}
+.colume__left {
+}
+.colume__block {
+}
+.colume__check {
+}
+.far {
+}
+.fa-check-circle {
+}
+.colume__title {
+}
+.colume__text {
+}
+.colume__center {
+}
+.colume__img {
+}
+.colume__img--center {
+}
+.img-fluid {
+}
+.colume__right {
+}
+
+//-------------------------COLUME END----------------------//
