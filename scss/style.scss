@@ -116,11 +116,11 @@ header,
     }
 }
 
-.title__cursive{
-    &--video{
+//.title__cursive{
+//    &--video{
 
-    }
-}
+//    }
+//}
 
 //-------------------------PAGE END----------------------//
 
@@ -226,3 +226,7 @@ header,
 }
 
 //-------------------------VIDEO END----------------------//
+
+.prymary-dark-text {
+    color: $pallete-primary-dark;
+}
