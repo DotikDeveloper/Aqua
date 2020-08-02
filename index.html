@@ -94,7 +94,7 @@
     <!--Main Layout-->
     <main>
         <!-- about__page -->
-        <section class="page container-fluide">
+        <section class="page container-fluide my-5">
             <!-- start page block -->
             <div class="container">
                 <div id="pageAbout" class="page__block page__block--about mt-5">
@@ -159,39 +159,41 @@
         <!-- about__page end -->
         <!-- video__page -->
 
-        <div class="video__page container z-depth-2 my-5 py-5 rounded">
-
-            <!-- Modal -->
-            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                            <iframe id="player" class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/aVM9eiuOu14" frameborder="0"
-                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <section class="video container-fluide my-5">
+            <div class="video__page container z-depth-2 py-5 rounded">
+    
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                <iframe id="player" class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/aVM9eiuOu14" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal end -->
+    
+                <h2 class="page__title px-3">Убедитесь сами <span class="page__title--cursive">пурифайер - чистая вода
+                        24/7</span></h2>
+                <hr>
+    
+                <div class="video__block row">
+                    <div class="video__colume col-md-10 mx-auto mb-4">
+                        <div class="video__content z-depth-1 rounded">
+                            <img class="video__img rounded img-fluid" src="./media/bg-4.jpg" alt="Video title">
+    
+                            <a id="play" class="video__link btn-floating btn-danger btn-lg" data-toggle="modal"
+                                data-target="#modal1"><i class="fas fa-play"></i></a>
+    
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal end -->
-
-            <h2 class="video__title px-3">Убедитесь сами <span class="video__title--cursive">пурифайер - чистая вода
-                    24/7</span></h2>
-            <hr>
-            
-            <div class="video__block row">
-                <div class="col-md-10 mx-auto mb-4">
-                    <div class="video__content z-depth-1 rounded">
-                        <img class="video__img rounded img-fluid" src="./media/bg-4.jpg" alt="Video title">
-
-                        <a id="play" class="video__link btn-floating btn-danger btn-lg" data-toggle="modal"
-                            data-target="#modal1"><i class="fas fa-play"></i></a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
 
 

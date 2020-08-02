@@ -182,3 +182,47 @@ header,
 }
 
 //-------------------------COLUME END----------------------//
+
+
+//-------------------------VIDEO----------------------//
+.video {
+    background: #eeeaea96;
+    padding: 90px 0;
+    &__page{
+        background: fff;
+        margin: 50px auto;
+        @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+            margin-top: 90px;
+        }
+    }
+    &__colume{
+        
+    }
+    &__block {
+        
+        width: 600px;
+        margin: 0 auto;
+        @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+            width: 300px;
+        }
+        
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+    &__img {
+        width: 600px;
+        @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+            width: 300px;
+        }
+    }
+    &__link {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 45%;
+    }
+}
+
+//-------------------------VIDEO END----------------------//
