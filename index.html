@@ -7,95 +7,220 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Аквамир</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/solid.css"
-        integrity="sha384-TN9eFVoW87zV3Q7PfVXNZFuCwsmMwkuOTOUsyESfMS9uwDTf7yrxXH78rsXT3xf0" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/fontawesome.css"
-        integrity="sha384-PRy/NDAXVTUcXlWA3voA+JO/UMtzWgsYuwMxjuu6DfFPgzJpciUiPwgsvp48fl3p" crossorigin="anonymous">
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
-    <!-- Start project here-->
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+    <header class="full-height">
 
-    <header class="header header__body">
-        <div class="header__body--mask">
-            <div class="header__top container">
-                <div class="header__top">
-                    <a href="/"><img class="header__logo header__items" src="./media/logo-ru-hd.png" alt="Аквамир"></a>
-                    <div class="header__text header__items header__items--left">Продажа и установка <br> пурифайеров
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#pageHome"><img src="./media/logo-ru-hd.png" alt="Аквамир"
+                        width="150px"></a>
+                <div class="navbar-text navbar-text--left paragraph__cursive">Продажа и установка пурифайеров</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pageAbout">Пурифайер</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Аренда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Сервис</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <!-- вставка телефона -->
+                    <div class="navbar-text text-right">
+                        <a href="tel:88002010465">8 800 201 04 65</a>
+                        <div class="navbar-text">*Звонок по россии бесплатно</div>
                     </div>
-                </div>
-                <div class="header__top">
-                    <p class="header__text header__items header__text--number"><span
-                            class="fa fa-phone header__fa-phone header__items"></span>
-                        <a class="header__text header__items header__text--number" href="tel:88002010465">8 800 201 04
-                            65</a></p>
-
-                    <div class="header__text header__items header__items--right">*Звонок по россии бесплатно</div>
                 </div>
             </div>
-
-            <div class="header__center container">
-                <div class="header__center--leftblock">
-                    <div class="header__center header__center--left bg__mask bg__shadow">
-                        <h1 class="header__text">Бесперебойное обеспечение </h1>
-                        <h3 class="header__text header__text--green">чистой питьевой водой на работе и дома</h3>
-                        <h6 class="header__text">Без бутылей</h6>
-                        <button class="btn header__btn bg__mask--none">Выбрать пурифайер</button>
+        </nav>
+        <!-- start page block -->
+        <div class="view page__home" id="pageHome">
+            <div class="full-bg-img">
+                <div class="mask rgba-blue-grey-light flex-center">
+                    <div class="container white-text wow fadeInUp">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-5 d-flex align-items-center">
+                                        <div class="view__block">
+                                            <h1 class="font-weight-bold page__title text-uppercase">Бесперебойное
+                                                обеспечение чистой питьевой водой</h1>
+                                            <p> <i class="text-white paragraph__cursive mt-2">На работе и дома. Без
+                                                    бутылей</i></p>
+                                            <button type="button" class="mt-4 mx-0 btn btn-orange">Заказать</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <img src="./media/bg__header.png" class="img-fluid  img__header--center"
+                                            alt="smaple image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <img src="./media/garant.png">
-                </div>
-                <div class="header__center">
-                    <img class="header__center--img" src="./media/bg__header.png">
                 </div>
             </div>
         </div>
+        <!-- end page block -->
     </header>
+    <!--Main Navigation-->
+    <!--Main Layout-->
+    <main>
+        <!-- about__page -->
+        <section class="page container-fluide my-5">
+            <!-- start page block -->
+            <div class="container">
+                <div id="pageAbout" class="page__block page__block--about mt-5">
+                    <h2 class="page__title">Что такое <span class="page__title--cursive">пурифайер</span></h2>
+                    <!-- page__colume -->
+                    <div class="page__colume row d-flex justify-content-center">
 
-    <main class="main__body">
-        <div class="page__body page__about container">
-            <h1 class="body__title">Что такое <span class="body__title--cursive">пурифайер</span></h1>
-            <div class="page__colume colume">
-                <colume__block><i class="fa fa-check-circle"></i>
-                    <h4 class="colume__title">Здоровье</h4>
-                    <p>чистая питьевая вода - основа долголетия</p>
-                </colume__block>
-                <colume__block><i class="fa fa-check-circle"></i>
-                    <h4 class="colume__title">Здоровье</h4>
-                    <p>чистая питьевая вода - основа долголетия</p>
-                </colume__block>
-                <colume__block><i class="fa fa-check-circle"></i>
-                    <h4 class="colume__title">Здоровье</h4>
-                    <p>чистая питьевая вода - основа долголетия</p>
-                </colume__block>
+                        <!-- colume__left -->
+                        <div class="col-md-4 colume colume__left">
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Здоровье</h4>
+                                <p class="colume__text">чистая питьевая вода - основа долголетия</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Безлимитная вода</h4>
+                                <p class="colume__text">питьевая вода в неограниченном количестве в любое время дня и
+                                    ночи</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Качество</h4>
+                                <p class="colume__text">4 фильтра очищают водопроводную воду, сохраняя полезный
+                                    микроэлементый состав</p>
+                            </div>
+                        </div>
+
+                        <!--colume__center-->
+                        <div class="col-md-4 colume colume__center">
+                            <img class="colume__img colume__img--center img-fluid "
+                                src="./media/colume__img--center.png" alt="пурифайер - источник чистой воды">
+                        </div>
+
+                        <!-- colume__right -->
+                        <div class="col-md-4 colume colume__right ">
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Свобода</h4>
+                                <p class="colume__text">от поднимания тяжестей, ожидания доставки и контроля оплаты за
+                                    воду</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Выгода</h4>
+                                <p class="colume__text">литр воды из пурифайера дешевле воды из кулера в 10 раз!</p>
+                            </div>
+                            <div class="colume__block">
+                                <i class="colume__check far fa-check-circle"></i>
+                                <h4 class="colume__title">Дизайн</h4>
+                                <p class="colume__text">стильный, современный интерьер и никаких потёртых бутылок!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- page__colume end -->
+
+                </div>
             </div>
-            <div class="page__colume page__colume--center"><img class="colume__img--center" src="./media/colume__img--center.png"></div>
-            <div class="page__colume colume">
-                <colume__block><i class="fa fa-check-circle"></i>
-                    <h4 class="colume__title">Здоровье</h4>
-                    <p>чистая питьевая вода - основа долголетия</p>
-                </colume__block>
-                <colume__block><i class="fa fa-check-circle"></i>
-                    <h4 class="colume__title">Здоровье</h4>
-                    <p>чистая питьевая вода - основа долголетия</p>
-                </colume__block>
-                <colume__block><i class="fa fa-check-circle"></i>
-                    <h4 class="colume__title">Здоровье</h4>
-                    <p>чистая питьевая вода - основа долголетия</p>
-                </colume__block>
+            <!-- end page block -->
+        </section>
+        <!-- about__page end -->
+        <!-- video__page -->
+
+        <section class="video container-fluide my-5">
+            <div class="video__page container z-depth-2 py-5 rounded">
+    
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                <iframe id="player" class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/aVM9eiuOu14" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal end -->
+    
+                <h2 class="page__title px-3">Убедитесь сами <span class="page__title--cursive">пурифайер - чистая вода
+                        24/7</span></h2>
+                <hr>
+    
+                <div class="video__block row">
+                    <div class="video__colume col-md-10 mx-auto mb-4">
+                        <div class="video__content z-depth-1 rounded">
+                            <img class="video__img rounded img-fluid" src="./media/bg-4.jpg" alt="Video title">
+    
+                            <a id="play" class="video__link btn-floating btn-danger btn-lg" data-toggle="modal"
+                                data-target="#modal1"><i class="fas fa-play"></i></a>
+    
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+
+
+
+
+
+        <!-- video__page end -->
+
     </main>
-    <footer class="footer__body">
+    <!--Main Layout-->
+    <footer>
 
     </footer>
-
-    <!-- End project here-->
-
-    <!-- Custom scripts -->
-    <script src="js/custom_script.js"></script>
+    <!-- End your project here-->
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+    </script>
+    <!-- Your custom scripts (optional) -->
+    <script src="./js/custom_script.js"></script>
 </body>
 
 </html>
