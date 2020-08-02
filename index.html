@@ -93,7 +93,8 @@
     <!--Main Navigation-->
     <!--Main Layout-->
     <main>
-        <div class="page container-fluide">
+        <!-- about__page -->
+        <section class="page container-fluide">
             <!-- start page block -->
             <div class="container">
                 <div id="pageAbout" class="page__block page__block--about mt-5">
@@ -111,27 +112,30 @@
                             <div class="colume__block">
                                 <i class="colume__check far fa-check-circle"></i>
                                 <h4 class="colume__title">Безлимитная вода</h4>
-                                <p class="colume__text">питьевая вода в неограниченном количестве в любое время дня и ночи</p>
+                                <p class="colume__text">питьевая вода в неограниченном количестве в любое время дня и
+                                    ночи</p>
                             </div>
                             <div class="colume__block">
                                 <i class="colume__check far fa-check-circle"></i>
                                 <h4 class="colume__title">Качество</h4>
-                                <p class="colume__text">4 фильтра очищают водопроводную воду, сохраняя полезный микроэлементый состав</p>
-                            </div>                            
+                                <p class="colume__text">4 фильтра очищают водопроводную воду, сохраняя полезный
+                                    микроэлементый состав</p>
+                            </div>
                         </div>
 
                         <!--colume__center-->
                         <div class="col-md-4 colume colume__center">
-                            <img class="colume__img colume__img--center img-fluid" src="./media/colume__img--center.png"
-                                alt="пурифайер - источник чистой воды">
+                            <img class="colume__img colume__img--center img-fluid "
+                                src="./media/colume__img--center.png" alt="пурифайер - источник чистой воды">
                         </div>
 
                         <!-- colume__right -->
-                        <div class="col-md-4 colume colume__right">
+                        <div class="col-md-4 colume colume__right ">
                             <div class="colume__block">
                                 <i class="colume__check far fa-check-circle"></i>
                                 <h4 class="colume__title">Свобода</h4>
-                                <p class="colume__text">от поднимания тяжестей, ожидания доставки и контроля оплаты за воду</p>
+                                <p class="colume__text">от поднимания тяжестей, ожидания доставки и контроля оплаты за
+                                    воду</p>
                             </div>
                             <div class="colume__block">
                                 <i class="colume__check far fa-check-circle"></i>
@@ -142,16 +146,60 @@
                                 <i class="colume__check far fa-check-circle"></i>
                                 <h4 class="colume__title">Дизайн</h4>
                                 <p class="colume__text">стильный, современный интерьер и никаких потёртых бутылок!</p>
-                            </div>                            
-                        </div>                       
-                        
+                            </div>
+                        </div>
+
                     </div>
                     <!-- page__colume end -->
 
                 </div>
             </div>
             <!-- end page block -->
+        </section>
+        <!-- about__page end -->
+        <!-- video__page -->
+
+        <div class="video__page container z-depth-2 my-5 py-5 rounded">
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <iframe id="player" class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/aVM9eiuOu14" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal end -->
+
+            <h2 class="video__title px-3">Убедитесь сами <span class="video__title--cursive">пурифайер - чистая вода
+                    24/7</span></h2>
+            <hr>
+            
+            <div class="video__block row">
+                <div class="col-md-10 mx-auto mb-4">
+                    <div class="video__content z-depth-1 rounded">
+                        <img class="video__img rounded img-fluid" src="./media/bg-4.jpg" alt="Video title">
+
+                        <a id="play" class="video__link btn-floating btn-danger btn-lg" data-toggle="modal"
+                            data-target="#modal1"><i class="fas fa-play"></i></a>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+
+        <!-- video__page end -->
+
     </main>
     <!--Main Layout-->
     <footer>

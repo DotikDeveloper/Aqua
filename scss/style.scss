@@ -3,16 +3,8 @@
 @import '_color.scss';
 @import '_nullstyle.scss';
 
-*{
+* {
     color: $pallete-fonts--dark;
-}
-
-main{
-}
-
-.view {
-    background: url("../media/bg-6.jpg")no-repeat center center;
-    background-size: cover;
 }
 
 .view__block {
@@ -25,28 +17,29 @@ main{
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
-    & h1{
+
+    & h1 {
         font-size: 36px;
     }
-    @media only screen
-    and (min-device-width: 374px)
-    and (max-device-width: 766px) {
+
+    @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
         margin-top: 300px;
-        & h1{
+
+        & h1 {
             font-size: 22px;
         }
     }
-    
+
 }
 
 
 
 .navbar {
-    background-color: transparent;    
+    background-color: transparent;
 }
 
-.navbar-text--left{
-    border-left: 2px solid rgba(255,255,255,.5);
+.navbar-text--left {
+    border-left: 2px solid rgba(255, 255, 255, .5);
     padding-left: 15px;
 }
 
@@ -65,7 +58,7 @@ body,
 header,
 .view,
 .page {
-  height: 100vh;
+    height: 100vh;
 }
 
 //header
@@ -76,9 +69,8 @@ header,
     position: relative;
     top: 120px;
     right: -250px;
-    @media only screen
-    and (min-device-width: 374px)
-    and (max-device-width: 766px) {
+
+    @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
         left: 150px;
         top: -120px;
         position: fixed;
@@ -88,19 +80,45 @@ header,
 //-------------------------PAGE----------------------//
 
 .page {
-    &__block {
-        &--about {
-        }
+
+    //&__block {
+    //    &--about {}
+    //}
+    &__home {
+        background: url("../media/bg-6.jpg")no-repeat center center;
+        background-size: cover;
     }
+
     &__title {
-        font-size: 48px;
-        color: $pallete-secondary-light;
+        font-size: 60px;
+        color: $pallete-secondary;
+        
         &--cursive {
             font-family: 'Playfair Display', serif;
-            font-size: 24px;
+            font-size: 44px;
+            color: $pallete-fonts--dark;
+
+            @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+                font-size: 28px;
+            }
+        }
+
+        @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+            font-size: 38px;
+            text-align: center;
+            margin-bottom: 15px;
         }
     }
-    &__img--center {
+
+    &__colume {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.title__cursive{
+    &--video{
+
     }
 }
 
@@ -108,41 +126,59 @@ header,
 
 //----------------------COLUME----------------------//
 
-.page__colume {
-}
-.row {
-}
-.d-flex {
-}
-.justify-content-center {
-}
-.col-md-4 {
-}
 .colume {
-}
-.colume__left {
-}
-.colume__block {
-}
-.colume__check {
-}
-.far {
-}
-.fa-check-circle {
-}
-.colume__title {
-}
-.colume__text {
-}
-.colume__center {
-}
-.colume__img {
-}
-.colume__img--center {
-}
-.img-fluid {
-}
-.colume__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    //&__left {}
+
+    //&__center {}
+
+    &__img {
+        &--center {
+            @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+                display: none;
+            }
+        }
+    }
+
+    &__block {
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    &__check {
+        color: $pallete-secondary-light;
+        font-size: 38px;
+
+        @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+            font-size: 30px;
+        }
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        color: $pallete-primary-dark;
+        font-size: 30px;
+
+        @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+            font-size: 22px;
+        }
+    }
+
+    &__text {
+        font-family: 'PT Sans', sans-serif;
+        color: $pallete-fonts--dark;
+        line-height: 25px;
+        letter-spacing: 2px;
+
+        @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            line-height: 15px;
+        }
+    }
 }
 
 //-------------------------COLUME END----------------------//
