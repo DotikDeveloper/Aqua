@@ -362,6 +362,8 @@ header,
 
 //-------------------------STEPS END-------------------------//
 
+//-------------------------FEELBACK-------------------------//
+
 .feelback {
     &__block {
         background-color: $pallete-primary;
@@ -385,3 +387,91 @@ header,
     }
 
 }
+
+//------------------FEELBACK END------------------//
+
+
+//------------------CONECTION-----------------//
+
+.connection {
+    background-image: url(../media/conect-bg.jpg);
+    background-size: cover;
+
+    &__title {
+        margin-left: 50px;
+        padding-top: 30px;
+
+        @media (max-width: 767.98px) {
+            margin-left: 20px;
+            padding-top: 15px;
+        }
+
+    }
+
+    &__block {
+        position: relative;
+
+    }
+
+    &__pictures {
+        position: absolute;
+        top: -360px;
+
+        @media (max-width: 767.98px) {
+            top: 140px;
+        }
+
+    }
+
+    &__description {
+        background-color: $pallete-secondary-light;
+        width: 235px;
+        height: 145px;
+        border: 12px solid rgba(255, 255, 255, 0.315);
+        -webkit-border-top-left-radius: 50px;
+        -moz-border-radius-topleft: 50px;
+        border-top-left-radius: 50px;
+        -webkit-border-bottom-right-radius: 50px;
+        -moz-border-radius-bottomright: 50px;
+        border-bottom-right-radius: 50px;
+        //position: relative;
+        z-index: 1;
+        position: absolute;
+        right: 95px;
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 15px;
+
+        @media (max-width: 767.98px) {
+            background: none;
+            border: none;
+            right: 95px;
+            text-align: center;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+
+        &>p {
+            line-height: 1.2;
+            color: $pallete-primary-dark;
+            font-family: 'Playfair Display', serif;
+
+            @media (max-width: 767.98px) {
+                font-size: 36px;
+                margin-top: -.7em;
+            }
+        }
+
+        &>p strong {
+            color: $pallete-primary-dark;
+            font-weight: 700;
+
+            @media (max-width: 767.98px) {
+                display: none;
+            }
+        }
+
+    }
+}
+
+//------------------CONECTION END------------------//
