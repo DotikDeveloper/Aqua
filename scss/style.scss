@@ -1,7 +1,19 @@
-//import files
+//-------------------------IMPORT------------------------------//
 @import '_fonts.scss';
 @import '_color.scss';
 @import '_nullstyle.scss';
+
+//-------------------------IMPORT END--------------------------//
+
+//-------------------------GENERAL STYLE------------------------------//
+
+.prymary-dark-text {
+    color: $pallete-primary-dark;
+}
+
+.prymary-text {
+    color: $pallete-primary;
+}
 
 * {
     color: $pallete-fonts--dark;
@@ -76,6 +88,9 @@ header,
         position: fixed;
     }
 }
+
+
+//-------------------------GENERAL STYLE END--------------------------//
 
 //-------------------------PAGE----------------------//
 
@@ -229,10 +244,13 @@ header,
 
 //-------------------------VIDEO END----------------------//
 
-.prymary-dark-text {
-    color: $pallete-primary-dark;
+//-------------------------FEATURES--------------------------//
+
+.features {
+    &__description{
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+    }
 }
 
-.prymary-text {
-    color: $pallete-primary;
-}
+//-------------------------FEATURES END----------------------//
