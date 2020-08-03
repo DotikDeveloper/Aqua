@@ -203,6 +203,9 @@ header,
         @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
             width: 300px;
         }
+        .fa-play{
+            color: white;
+        }
         
     }
     &__content {
@@ -220,6 +223,7 @@ header,
         height: 40px;
         position: absolute;
         top: 45%;
+        
     }
 }
 
