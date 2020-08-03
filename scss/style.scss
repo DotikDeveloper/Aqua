@@ -15,6 +15,20 @@
     color: $pallete-primary;
 }
 
+.custom__btn {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    @media (max-width: 767.98px) {
+        align-self: center;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+
 * {
     color: $pallete-fonts--dark;
 }
@@ -347,3 +361,27 @@ header,
 }
 
 //-------------------------STEPS END-------------------------//
+
+.feelback {
+    &__block {
+        background-color: $pallete-primary;
+        display: flex;
+
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+
+    &__description {
+        color: $pallete-secondary-light;
+        align-self: center;
+
+        @media (max-width: 767.98px) {
+            font-size: 18px;
+        }
+    }
+
+}
