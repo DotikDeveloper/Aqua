@@ -599,3 +599,39 @@ header,
 
 
 //------------------RECHANGE END------------------//
+
+
+//------------------PURIFICATION------------------//
+.purification {
+    background-color: $pallete-fonts;
+
+    &__page {
+        & li a {
+            color: $pallete-secondary;
+            font-size: 24px;
+            background-color: #fff;
+            margin-right: 10px;
+            border: 1px solid $pallete-secondary;
+        }
+    }
+
+    &__tittle {
+        padding-bottom: 70px;
+    }
+
+    &__tabs {
+
+    }
+}
+
+.tab-pane.active.show {
+    height: 150px;
+}
+
+.tab {
+    &-content {
+
+    }
+}
+
+//------------------PURIFICATION END------------------//
