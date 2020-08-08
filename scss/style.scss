@@ -15,6 +15,10 @@
     color: $pallete-primary;
 }
 
+.secondary-light-text {
+    color: $pallete-secondary-light;
+}
+
 .custom__btn {
     color: white;
     text-transform: uppercase;
@@ -72,10 +76,11 @@
         &--left {
             border-left: 2px solid rgba(255, 255, 255, .5);
             padding-left: 15px;
+
             @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
                 font-size: 14px;
             }
-            
+
         }
 
         &--desktop {
@@ -144,7 +149,13 @@ header,
 
     &__title {
         font-size: 60px;
-        color: $pallete-secondary-light;
+        color: $pallete-secondary;
+
+        &--light {
+            color: $pallete-secondary-light;
+            font-size: 60px;
+
+        }
 
         &--cursive {
             font-family: 'Playfair Display', serif;
@@ -528,6 +539,7 @@ header,
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
         margin: 25px 0 20px;
+
         @media (max-width: 767.98px) {
             display: none;
         }
