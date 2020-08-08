@@ -72,6 +72,10 @@
         &--left {
             border-left: 2px solid rgba(255, 255, 255, .5);
             padding-left: 15px;
+            @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
+                font-size: 14px;
+            }
+            
         }
 
         &--desktop {
@@ -88,7 +92,6 @@
         }
     }
 }
-
 
 .top-nav-collapse {
     background-color: $pallete-primary-dark;
@@ -501,11 +504,17 @@ header,
 .rechange {
 
     &__page {
-        //background-color: $pallete-primary-light;
+        background-image: url(/media/bg-4.jpg);
     }
 
     &__content {
         padding-bottom: 70px;
+
+        & p {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            line-height: 36px;
+        }
 
     }
 
@@ -518,39 +527,62 @@ header,
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
+        margin: 25px 0 20px;
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+
     }
 
     &__item {
         &-title {
             padding: 5px 0 0 15px;
+
         }
+
         &-number {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 70px;
             color: $pallete-primary;
+
+            @media (max-width: 768px) {
+                font-size: 52px;
+            }
         }
+
         &-description {
             font-size: 1.2em;
             padding-top: 25px;
             color: $pallete-primary;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                padding: 5px 0 0 5px;
+            }
         }
+
         &-drop {
             &--color {
                 color: $pallete-secondary;
                 font-size: 36px;
+
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
             }
         }
 
     }
-    &__text{
-        &--content{
+
+    &__text {
+        &--content {
             font-size: 18px;
             padding: 0 15px 15px;
         }
     }
 
-    
+
 }
 
 
