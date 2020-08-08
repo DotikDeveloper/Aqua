@@ -62,16 +62,33 @@
 
 .navbar {
     background-color: transparent;
-    &-text--right{
-        padding-top: 0px;
-        padding-bottom: 0px;
+
+    &-text {
+        &--right {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        &--left {
+            border-left: 2px solid rgba(255, 255, 255, .5);
+            padding-left: 15px;
+        }
+
+        &--desktop {
+            @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+                display: none;
+            }
+        }
+    }
+
+    & .fas {
+        @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+            margin-left: 10px;
+            font-size: 24px;
+        }
     }
 }
 
-.navbar-text--left {
-    border-left: 2px solid rgba(255, 255, 255, .5);
-    padding-left: 15px;
-}
 
 .top-nav-collapse {
     background-color: $pallete-primary-dark;
@@ -479,6 +496,53 @@ header,
 
 //------------------CONECTION END------------------//
 
-//------------------CONECTION------------------//
+//------------------RECHANGE------------------//
 
-//------------------CONECTION END------------------//
+.rechange {
+
+    &__page {
+        background-color: $pallete-primary-light;
+    }
+
+    &__content {
+
+    }
+
+    &__card {
+        width: 250px;
+        height: 150px;
+        border: 1px solid $pallete-primary;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+
+    &__item {
+        &-title {
+            padding: 5px 0 0 5px;
+        }
+        &-number {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 70px;
+            color: $pallete-primary;
+        }
+        &-description {
+            font-size: 1.2em;
+            color: $pallete-primary;
+        }
+        &-drop {
+            &--color {
+                color: $pallete-primary-dark;
+            }
+        }
+
+    }
+
+    
+}
+
+
+//------------------RECHANGE END------------------//
