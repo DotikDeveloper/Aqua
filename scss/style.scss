@@ -501,10 +501,11 @@ header,
 .rechange {
 
     &__page {
-        background-color: $pallete-primary-light;
+        //background-color: $pallete-primary-light;
     }
 
     &__content {
+        padding-bottom: 70px;
 
     }
 
@@ -521,7 +522,7 @@ header,
 
     &__item {
         &-title {
-            padding: 5px 0 0 5px;
+            padding: 5px 0 0 15px;
         }
         &-number {
             font-family: 'Montserrat', sans-serif;
@@ -531,14 +532,22 @@ header,
         }
         &-description {
             font-size: 1.2em;
+            padding-top: 25px;
             color: $pallete-primary;
         }
         &-drop {
             &--color {
-                color: $pallete-primary-dark;
+                color: $pallete-secondary;
+                font-size: 36px;
             }
         }
 
+    }
+    &__text{
+        &--content{
+            font-size: 18px;
+            padding: 0 15px 15px;
+        }
     }
 
     
