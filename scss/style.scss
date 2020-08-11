@@ -452,8 +452,8 @@ header,
         position: absolute;
         top: -360px;
 
-        @media (max-width: 767.98px) {
-            top: 140px;
+        @media (max-width: 768px) {
+            display: none;
         }
 
     }
@@ -476,7 +476,7 @@ header,
         padding-top: 15px;
         padding-left: 15px;
 
-        @media (max-width: 767.98px) {
+        @media (max-width: 768px) {
             background: none;
             border: none;
             right: 95px;
@@ -490,7 +490,7 @@ header,
             color: $pallete-primary-dark;
             font-family: 'Playfair Display', serif;
 
-            @media (max-width: 767.98px) {
+            @media (max-width: 768px) {
                 font-size: 36px;
                 margin-top: -.7em;
             }
@@ -603,7 +603,8 @@ header,
 
 //------------------PURIFICATION------------------//
 .purification {
-    background-color: $pallete-fonts;
+    background-color: $pallete-primary-light;
+
 
     &__page {
         & li a {
@@ -612,26 +613,50 @@ header,
             background-color: #fff;
             margin-right: 10px;
             border: 1px solid $pallete-secondary;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                margin-right: 5px;
+            }
+
+
         }
     }
 
     &__tittle {
         padding-bottom: 70px;
+        
+
+        @media (max-width: 768px) {
+            padding-bottom: 10px;
+        }
     }
 
-    &__tabs {
-
+    &__picture {
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
+
+    &__tabs {}
 }
 
 .tab-pane.active.show {
     height: 150px;
+    transition: all 2s ease 0s;
+    -webkit-transition: all 2s ease 0s;
+    -moz-transition: all 2s ease 0s;
+    -ms-transition: all 2s ease 0s;
+    -o-transition: all 2s ease 0s;
 }
 
 .tab {
-    &-content {
-
-    }
+    &-content {}
 }
 
 //------------------PURIFICATION END------------------//
+
+.scheme {
+    background-color: $pallete-primary-light;
+}
