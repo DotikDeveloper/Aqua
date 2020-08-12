@@ -143,7 +143,7 @@ header,
     //    &--about {}
     //}
     &__home {
-        background: url("../media/bg-6.jpg")no-repeat center center;
+        background: url("../media/bg-7.jpg")no-repeat center center;
         background-size: cover;
     }
 
@@ -658,69 +658,69 @@ header,
 //------------------PURIFICATION END------------------//
 
 //------------------SCHEME ------------------//
-.calculator {
+//.calculator {
 
-    &__block {
-        background-color: $pallete-primary-light;
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-}
+//    &__block {
+//        background-color: $pallete-primary-light;
+//        border-radius: 25px;
+//        -webkit-border-radius: 25px;
+//        -moz-border-radius: 25px;
+//        -ms-border-radius: 25px;
+//        -o-border-radius: 25px;
+//}
 
-    &__row {
-        background-color: rgba(255, 255, 255, 0.1);
-        box-shadow: 
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-}
+//    &__row {
+//        background-color: rgba(255, 255, 255, 0.1);
+//        //box-shadow:;
+//        border-radius: 15px;
+//        -webkit-border-radius;
+//        -moz-border-radius;
+//        -ms-border-radius;
+//        -o-border-radius;
+//}
 
-    &__input {
-    }
+//    &__input {
+//    }
 
-    &__result {
-    }
-}
+//    &__result {
+//    }
+//}
 
-.input {
+//.input {
 
-    &__box {
-    }
+//    &__box {
+//    }
 
-    &__description {
-    }
+//    &__description {
+//    }
 
-    &__title {
-    }
-}
+//    &__title {
+//    }
+//}
 
-.result {
+//.result {
 
-    &__quantity {
-    }
+//    &__quantity {
+//    }
 
-    &__title {
-    }
-}
+//    &__title {
+//    }
+//}
 
-.quantity {
+//.quantity {
 
-    &__description {
-    }
+//    &__description {
+//    }
 
-    &__value {
-    }
+//    &__value {
+//    }
 
-    &__value--first-year {
-    }
+//    &__value--first-year {
+//    }
 
-    &__value--second-year {
-    }
-}
+//    &__value--second-year {
+//    }
+//}
 
 //------------------SCHEME END------------------//
 
