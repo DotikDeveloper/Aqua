@@ -25,7 +25,6 @@ updateInput(price, priceRange);
 
 
 
-
 //let expensesPerFirstYear = 45000; // затраты в первый год
 //console.log('expensesPerFirstYear: ', expensesPerFirstYear);
 
