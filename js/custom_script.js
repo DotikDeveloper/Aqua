@@ -9,20 +9,23 @@ const bottle = document.querySelector('#customNumberBottleRange'),
     priceRange = document.querySelector('#customPriceBottleValue'),
     quantityForFirstYearValue = document.querySelector('.quantity__value--first-year'),
     quantityForSecondYearValue = document.querySelector('.quantity__value--second-year');
-
+    
+    
 function updateInput(range, rangeValue) {
     range.addEventListener('input', updateValue);
     function updateValue(e) {
-        rangeValue.textContent = e.target.value;
-        console.log('rangeValue: ', rangeValue.innerText);
-        //quantityForFirstYearValue.textContent = rangeValue;
+        rangeValue.textContent = e.target.value; //вывод количества бутылок
+        const quantityPerYear = bottle.value * price.value * 12; // затраты в год
 
+
+
+
+        quantityForFirstYearValue.textContent = quantityPerYear;
     }
 }
 
 updateInput(bottle, bottleRange);
 updateInput(price, priceRange);
-
 
 
 //let expensesPerFirstYear = 45000; // затраты в первый год
@@ -32,9 +35,6 @@ updateInput(price, priceRange);
 
 //let expensesPerYear = bootle * price * 12; //затраты в год при покупке бутылок
 //console.log('expensesPerYear: ', expensesPerYear);
-
-//let priceOneLiter = +(price / 19).toFixed(2); // стоимость одного литра в бутылях
-//console.log('priceOneLiter: ', priceOneLiter);
 
 //let economyForFirstYear = expensesPerYear - expensesPerFirstYear; //экономия в первый год
 //console.log('economyForFirstYear: ', economyForFirstYear);
