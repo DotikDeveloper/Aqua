@@ -5,25 +5,26 @@
 
 const bottle = document.querySelector('#customNumberBottleRange'),
     bottleRange = document.querySelector('#customNumberBottleValue'),
-    price = document.querySelector('')
-
-
+    price = document.querySelector('#customPriceBottleRange'),
+    priceRange = document.querySelector('#customPriceBottleValue'),
+    quantityForFirstYearValue = document.querySelector('.quantity__value--first-year'),
+    quantityForSecondYearValue = document.querySelector('.quantity__value--second-year');
 
 function updateInput(range, rangeValue) {
     range.addEventListener('input', updateValue);
     function updateValue(e) {
-        console.log('value: ', e.target.value);
         rangeValue.textContent = e.target.value;
+        console.log('rangeValue: ', rangeValue.innerText);
+        //quantityForFirstYearValue.textContent = rangeValue;
+
     }
 }
 
+updateInput(bottle, bottleRange);
+updateInput(price, priceRange);
 
 
 
-//let rangeBottle = document.querySelector('#customRangeBottle').value;
-//console.log('rangeBottle: ', rangeBottle);
-
-//let price = 200; // стоимость бутылки
 
 //let expensesPerFirstYear = 45000; // затраты в первый год
 //console.log('expensesPerFirstYear: ', expensesPerFirstYear);
