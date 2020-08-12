@@ -1,7 +1,4 @@
-// calculator
-
-//let bottle = document.querySelector('#customNumberBottle').value; // кол-во бутылок в мес.
-//console.log('bootle: ', bottle);
+// calculator -----------------------------------------------------------------------
 
 const bottle = document.querySelector('#customNumberBottleRange'),
     bottleRange = document.querySelector('#customNumberBottleValue'),
@@ -9,38 +6,25 @@ const bottle = document.querySelector('#customNumberBottleRange'),
     priceRange = document.querySelector('#customPriceBottleValue'),
     quantityForFirstYearValue = document.querySelector('.quantity__value--first-year'),
     quantityForSecondYearValue = document.querySelector('.quantity__value--second-year');
-    
-    
+
+    quantityForFirstYearValue.textContent = +(bottle.value * price.value * 12 - 45000);
+    quantityForSecondYearValue.textContent = +(bottle.value * price.value * 12 - 12000);
+
+    bottleRange.textContent = bottle.value;
+    priceRange.textContent = price.value;
+
 function updateInput(range, rangeValue) {
     range.addEventListener('input', updateValue);
+
     function updateValue(e) {
         rangeValue.textContent = e.target.value; //вывод количества бутылок
-        const quantityPerYear = bottle.value * price.value * 12; // затраты в год
-
-
-
-
-        quantityForFirstYearValue.textContent = quantityPerYear;
+        const quantityPerYear = bottle.value * price.value * 12; // затраты в год при покупке                
+        quantityForFirstYearValue.textContent = +(quantityPerYear - 45000); //экономия в первый год вывод в форму
+        quantityForSecondYearValue.textContent = +(quantityPerYear - 12000); //экономия во второй год вывод в форму
     }
 }
 
 updateInput(bottle, bottleRange);
 updateInput(price, priceRange);
 
-
-//let expensesPerFirstYear = 45000; // затраты в первый год
-//console.log('expensesPerFirstYear: ', expensesPerFirstYear);
-
-//let expensesPerSecondYear = 12000; // затраты во второй год
-
-//let expensesPerYear = bootle * price * 12; //затраты в год при покупке бутылок
-//console.log('expensesPerYear: ', expensesPerYear);
-
-//let economyForFirstYear = expensesPerYear - expensesPerFirstYear; //экономия в первый год
-//console.log('economyForFirstYear: ', economyForFirstYear);
-
-//let economyForSecondYear = expensesPerYear - expensesPerSecondYear; // экономия во второй год
-//console.log('economyForSecondYear: ', economyForSecondYear);
-
-//let priceOneLiterPuryfaier = +(expensesPerSecondYear / 30000).toFixed(2); // стоимость литра в пурифайере
-//console.log('priceOneLiterPuryfaier: ', priceOneLiterPuryfaier);
+// calculator end -------------------------------------------------------------
