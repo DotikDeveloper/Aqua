@@ -789,8 +789,7 @@
             <div class="container my-5 pt-5">
                 <!-- Section: Block Content -->
                 <section class="dark-grey-text text-center">
-                    <h2 class="page__title mb-4 pb-2">Сделайте расчет <span
-                            class="page__title--cursive">экономии
+                    <h2 class="page__title mb-4 pb-2">Сделайте расчет <span class="page__title--cursive">экономии
                         </span></h2>
                     <p class="text-muted w-responsive mx-auto mb-5">Наш калькулятор поможет вам узнать сколько вы
                         сможете сэкономить при использовании пурифайера.</p>
@@ -800,19 +799,21 @@
 
                             <!--calculator__input-->
                             <div class="col-md-6 calculator__input">
-                                <div class="input__box my-5 col-md-12">
-                                    <div class="d-flex justify-content-between input__description md-form">
-                                        <h4 class="input__title">Сколько бутылей (19 л.) покупаете в месяц?</h4>
-                                        <input class="input__title form-control ml-5 col-md-2" type="text"
-                                            placeholder="30" id="customNumberBottle">
+                                <div class="input__box col-md-12">
+                                    <div class="input__description md-form">
+                                        <h4 class="input__title text-left">Количество бутылей (19 л.) в месяц?</h4>
+
+                                        <input class="input__title input__title--value form-control" type="text"
+                                            placeholder="111" id="customNumberBottle">
+
                                     </div>
                                     <input type="range" class="custom-range" min="1" max="300" step="1"
                                         id="customRangeBottle">
                                 </div>
-                                <div class="input__box my-5 col-md-12">
-                                    <div class="d-flex justify-content-between input__description md-form">
-                                        <h4 class="input__title">Цена одного бутыля</h4>
-                                        <input class="input__title form-control ml-5 col-md-2" type="text"
+                                <div class="input__box col-md-12">
+                                    <div class="input__description md-form">
+                                        <h4 class="input__title text-left">Цена одного бутыля</h4>
+                                        <input class="input__title input__title--value form-control" type="text"
                                             placeholder="102" id="customNumberBottle">
                                     </div>
                                     <input type="range" class="custom-range" min="1" max="300" step="1"
@@ -821,29 +822,30 @@
                             </div>
 
                             <!--calculator__result-->
-                            <div class="d-flex flex-column text-left col-md-6 calculator__result">
-                                
-                                <!-- result row -->
-                                <div class="d-flex row px-0  text-center">
-                                    
-                                    <div class="result__quantity col-md-12 my-5 flex-column quantity">
-                                        <p class="quantity__description">стоимость литра воды в пурифайере</p>
-                                        <div class="quantity__value" id="quantity__value--first-year"><span class="quantity__value--first-year">0,4</span> руб.</div>
-                                    </div>
-                                    
-                                    <h3 class="result__title col-md-12 my-2">Ваша выгода</h3>
-                                    <div class="d-flex my-5 col-md-12 justify-content-between">
-                                        <div class="result__quantity text-center col-md-6 flex-column quantity">
-                                            <p class="quantity__description">в первый год</p>
-                                            <div class="quantity__value" id="quantity__value--first-year"><span class="quantity__value--first-year">273 980</span> руб.</div>
-                                        </div>
-                                        <div class="result__quantity text-center col-md-6 flex-column quantity">
-                                            <p class="quantity__description">со второго года</p>
-                                            <div class="quantity__value" id="quantity__value--second-year"><span class="quantity__value--second-year">173 980</span> руб.</div>
-                                        </div>
-                                    </div>
-                                    
+                            <div class="col-md-6 text-center row mx-0 p-3 calculator__result ">
+
+
+
+                                <div class="result__quantity col-md-12 flex-column quantity">
+                                    <p class="quantity__description">стоимость литра воды в пурифайере</p>
+                                    <div class="quantity__value" id="quantity__value--first-year"><span
+                                            class="quantity__value--cost">0,4</span> руб.</div>
                                 </div>
+                                <h3 class="result__title  col-md-12">Ваша выгода</h3>
+
+                                <div class="col-md-12 result__box">
+                                    <div class="result__quantity text-center col-md-6 quantity">
+                                        <div class="quantity__description">в первый год</div>
+                                        <div class="quantity__value" id="quantity__value--first-year"><span
+                                                class="quantity__value--first-year">273 980</span> руб.</div>
+                                    </div>
+                                    <div class="result__quantity text-center col-md-6 quantity">
+                                        <div class="quantity__description">со второго года</div>
+                                        <div class="quantity__value" id="quantity__value--second-year"><span
+                                                class="quantity__value--second-year">173 980</span> руб.</div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
