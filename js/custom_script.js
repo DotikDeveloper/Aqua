@@ -35,7 +35,7 @@ $(function () {
     $('.material-tooltip-main').tooltip({
       template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
     });
-  })
+  });
 
 //arenda end-------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ $(function () {
 
 const anchors = document.querySelectorAll('a.scroll-to');
 
-for (let anchor of anchors) {
+for (const anchor of anchors) {
   anchor.addEventListener('click', (e) => {
     e.preventDefault();
     
