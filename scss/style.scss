@@ -803,3 +803,48 @@ header,
 }
 
 //------------------CALCULATOR END------------------//
+
+//------------------FOR WHOM------------------//
+
+.for-whom {
+    //&__container {
+    //}
+
+    &__item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        background-color: $pallete-secondary-light;
+        padding: 0;
+
+        &--office {
+            background-image: url(../media/office.jpg);
+        }
+        &--description {
+            background-color: rgba(112, 107, 107, 0.65);
+            font-family: 'Montserrat', sans-serif;
+            color: $pallete-fonts;            
+            padding: 15px;
+            font-size: 56px;
+            height: 50%;
+            
+        }
+        &--hottels {
+            background-image: url(../media/hotels.jpg);
+        }
+        &--clinics {
+            background-image: url(../media/clinica.jpg);
+        }
+        &--school {
+            background-image: url(../media/school.jpg);
+        }
+        &--clients {
+            background-image: url(../media/office-for-clients.jpg);
+        }
+        &--company {
+            background-image: url(../media/company.jpg);
+        }
+    }
+}
+
+//------------------FOR WHOM END------------------//
