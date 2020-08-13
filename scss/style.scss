@@ -33,6 +33,17 @@
     }
 }
 
+// ecwid custom style
+
+span.form-control__button-text:nth-child(2), .form-control--large > button:nth-child(1) > span:nth-child(1){
+    color: #fff
+}
+
+
+
+
+// ecwid custom style end 
+
 * {
     color: $pallete-fonts--dark;
 }
