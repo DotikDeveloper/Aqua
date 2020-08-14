@@ -893,6 +893,30 @@ header,
 
 //------------------RENT-------------------------//
 
+.container {
+}
+.rent {
+
+		&__section {
+		}
+
+		//&__row {
+        //    max-height: 350px;
+		//}
+
+		//&__colume {
+        //    height: 350px;
+		//}
+
+		&__img {
+            max-width: 150px;
+		}
+
+		&__price {
+		}
+}
+
+
 
 
 //------------------RENT END--------------------//
