@@ -893,30 +893,82 @@ header,
 
 //------------------RENT-------------------------//
 
-.container {
-}
 .rent {
 
-		&__section {
-		}
+    //&__section {
+    //}
 
-		//&__row {
-        //    max-height: 350px;
-		//}
+    //&__row {
+    //    max-height: 350px;
+    //}
 
-		//&__colume {
-        //    height: 350px;
-		//}
+    //&__colume {
+    //    height: 350px;
+    //}
 
-		&__img {
-            max-width: 150px;
-		}
+    &__img {
+        max-width: 150px;
+        margin: 0 auto;
+    }
 
-		&__price {
-		}
+    &__price {
+        font-size: 28px;
+    }
 }
 
+//rent__description
 
+.fa-play:before {
+    margin-left: .3rem;
+}
+
+/* Steps */
+.step {
+    list-style: none;
+    margin: 0;
+
+    &-element {
+        display: flex;
+        padding: 1rem 0;
+    }
+
+    &-number {
+        position: relative;
+        width: 7rem;
+        flex-shrink: 0;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 48px;
+            bottom: -2rem;
+            margin-left: -1px;
+            border-left: 2px dashed #eaeff4;
+        }
+    }
+
+    &-number .number {
+        color: #bfc5ca;
+        background-color: #eaeff4;
+        font-size: 1.5rem;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+    }
+}
+
+.number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    border-radius: 10rem;
+}
+
+.step .step-element:last-child .step-number::before {
+    bottom: 1rem;
+}
 
 
 //------------------RENT END--------------------//
