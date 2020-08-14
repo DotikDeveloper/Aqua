@@ -33,9 +33,17 @@
     }
 }
 
+
+//img {
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//}
+
+
 // ecwid custom style
 
-span.form-control__button-text:nth-child(2), .form-control--large > button:nth-child(1) > span:nth-child(1){
+span.form-control__button-text:nth-child(2),
+.form-control--large>button:nth-child(1)>span:nth-child(1) {
     color: #fff
 }
 
@@ -668,6 +676,19 @@ header,
 //}
 
 //------------------PURIFICATION END------------------//
+
+//------------------SCHEME-------------------------//
+
+.scheme {
+
+    &__img {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+//------------------SCHEME END-------------------------//
+
 
 //------------------CALCULATOR ------------------//
 .calculator {

@@ -7,11 +7,11 @@ const bottle = document.querySelector('#customNumberBottleRange'),
     quantityForFirstYearValue = document.querySelector('.quantity__value--first-year'),
     quantityForSecondYearValue = document.querySelector('.quantity__value--second-year');
 
-    quantityForFirstYearValue.textContent = +(bottle.value * price.value * 12 - 45000);
-    quantityForSecondYearValue.textContent = +(bottle.value * price.value * 12 - 12000);
+quantityForFirstYearValue.textContent = +(bottle.value * price.value * 12 - 45000);
+quantityForSecondYearValue.textContent = +(bottle.value * price.value * 12 - 12000);
 
-    bottleRange.textContent = bottle.value;
-    priceRange.textContent = price.value;
+bottleRange.textContent = bottle.value;
+priceRange.textContent = price.value;
 
 function updateInput(range, rangeValue) {
     range.addEventListener('input', updateValue);
@@ -33,9 +33,9 @@ updateInput(price, priceRange);
 
 $(function () {
     $('.material-tooltip-main').tooltip({
-      template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
+        template: '<div class="tooltip md-tooltip"><div class="tooltip-arrow md-arrow"></div><div class="tooltip-inner md-inner"></div></div>'
     });
-  });
+});
 
 //arenda end-------------------------------------------------------------------
 
@@ -44,16 +44,16 @@ $(function () {
 const anchors = document.querySelectorAll('a.scroll-to');
 
 for (const anchor of anchors) {
-  anchor.addEventListener('click', (e) => {
-    e.preventDefault();
-    
-    const blockID = anchor.getAttribute('href');
-    
-    document.querySelector(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+    anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const blockID = anchor.getAttribute('href');
+
+        document.querySelector(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     });
-  });
 }
 
 // scroll -----------------------
