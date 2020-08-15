@@ -891,6 +891,21 @@ header,
 
 //------------------FOR WHOM END------------------//
 
+//---------------catalog---------------//
+
+//.catalog {
+//    @media (max-width: 768px) {
+//        ;
+//    }
+
+//    //&__container {
+
+//    //}
+//}
+
+//---------------catalog end---------------//
+
+
 //------------------RENT-------------------------//
 
 .rent {
@@ -978,6 +993,7 @@ header,
 
 .faq {
 
+
     &__card {
         border: 1px solid $pallete-secondary;
         background-color: $pallete-secondary-light;
@@ -1015,3 +1031,17 @@ header,
 }
 
 //------------------faq end---------------------//
+
+.container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (max-width: 768px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+}
