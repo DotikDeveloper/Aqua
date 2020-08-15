@@ -1045,3 +1045,18 @@ header,
     }
 
 }
+
+//contacts
+
+.map-container {
+    height: 230px;
+    position: relative;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
