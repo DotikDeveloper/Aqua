@@ -165,6 +165,9 @@ header,
     &__home {
         background: url("../media/bg-7.jpg")no-repeat center center;
         background-size: cover;
+        & h1{
+            color: $pallete-fonts--dark;
+        }
     }
 
     &__title {
