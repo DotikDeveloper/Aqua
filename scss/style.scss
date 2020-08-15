@@ -937,6 +937,7 @@ header,
         width: 7rem;
         flex-shrink: 0;
         text-align: center;
+
         &::before {
             content: '';
             position: absolute;
@@ -973,10 +974,44 @@ header,
 
 //------------------RENT END--------------------//
 
-//------------------service---------------------//
+//------------------faq---------------------//
+
+.faq {
+
+    &__card {
+        border: 1px solid $pallete-secondary;
+        background-color: $pallete-secondary-light;
+        transition: all .35s ease-out 0.25s;
+        -webkit-transition: all .35s ease-out 0.25s;
+        -moz-transition: all .35s ease-out 0.25s;
+        -ms-transition: all .35s ease-out 0.25s;
+        -o-transition: all .35s ease-out 0.25s;
+
+        &:hover {
+            background-color: $pallete-fonts;
+            border: 1px solid $pallete-fonts;
+        }
+    }
 
 
 
+    &__btn {
+        color: #fff;
+        font-size: 18px;
+        transition: all 0.35s ease-out 0.1s;
+        -webkit-transition: all 0.35s ease-out 0.1s;
+        -moz-transition: all 0.35s ease-out 0.1s;
+        -ms-transition: all 0.35s ease-out 0.1s;
+        -o-transition: all 0.35s ease-out 0.1s;
 
+        &:hover {
+            color: $pallete-fonts--dark;
+        }
 
-//------------------service end---------------------//
+        &:active {
+            color: $pallete-fonts;
+        }
+    }
+}
+
+//------------------faq end---------------------//
