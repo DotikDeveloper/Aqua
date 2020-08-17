@@ -165,7 +165,8 @@ header,
     &__home {
         background: url("../media/bg-7.jpg")no-repeat center center;
         background-size: cover;
-        & h1{
+
+        & h1 {
             color: $pallete-fonts--dark;
         }
     }
@@ -845,6 +846,12 @@ header,
 //------------------FOR WHOM------------------//
 
 .for-whom {
+    &__page {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
     //&__container {
     //}
 
