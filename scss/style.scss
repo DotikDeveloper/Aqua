@@ -74,6 +74,8 @@ span.form-control__button-text:nth-child(2),
     & h1 {
         font-size: 65px;
         color: $pallete-secondary;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
     }
 
     @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
@@ -89,23 +91,46 @@ span.form-control__button-text:nth-child(2),
 
 
 .navbar {
+    width: 100vw;
     background-color: transparent;
+    color: $pallete-fonts--dark;
+    transition: all .15s ease-in 0.1s       ;
+        -webkit-transition: all .15s ease-in 0.1s       ;
+        -moz-transition: all .15s ease-in 0.1s       ;
+        -ms-transition: all .15s ease-in 0.1s       ;
+        -o-transition: all .15s ease-in 0.1s       ;
+    & a {
+        color: $pallete-fonts--dark;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+
+
+        &:hover{
+        color: $pallete-fonts;
+        opacity: 0.95;
+        }
+    }
 
     &-text {
         &--right {
             padding-top: 0px;
-            padding-bottom: 0px;
-            
+            padding-bottom: 0px;            
             text-transform: uppercase;
+            color: $pallete-fonts--dark;            
         }
 
         &--left {
-            border-left: 2px solid $pallete-secondary;
+            border-left: 2px solid $pallete-fonts;
             color: $pallete-fonts;
             padding-left: 15px;
+            //width: 200px;
+            & p{
+                margin: 0 15px 0 0;
+                padding: 0;
+            }
 
             @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
-                font-size: 14px;
+                font-size: 10px;
             }
 
         }
@@ -118,6 +143,7 @@ span.form-control__button-text:nth-child(2),
     }
 
     & .fas {
+        color: $pallete-fonts--dark;
         @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
             margin-left: 10px;
             font-size: 24px;
@@ -125,13 +151,27 @@ span.form-control__button-text:nth-child(2),
     }
 }
 
+//.navbar-toggler-icon{
+//    background-color: $pallete-secondary-light;
+//}
+
 .top-nav-collapse {
     background-color: $pallete-primary-light;
+    & a, .nav-item a, .fas{
+        color: #fff;
+    }
+    & a:hover{
+        color: $pallete-fonts--dark;
+    }
+
+
 }
+
+
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: $pallete-secondary-light;
+        background-color: $pallete-primary-light;
     }
 }
 
@@ -145,12 +185,11 @@ header,
 //header
 
 .img__header--center {
-    height: 70vh;
+    height: 80vh;
     margin: 0 auto;
     position: relative;
-    top: 50px;
+    top: 80px;
     right: -50px;
-    box-shadow: 0px 0px 15px $pallete-secondary;
 
     @media (max-width: 768px) {
         position: sticky;
