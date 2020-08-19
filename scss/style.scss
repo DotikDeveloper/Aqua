@@ -19,6 +19,12 @@
     color: $pallete-secondary-light;
 }
 
+.nav-link.scroll-to {
+    color: $pallete-primary-dark;
+    text-transform: uppercase;
+}
+
+
 .custom__btn {
     color: white;
     text-transform: uppercase;
@@ -90,10 +96,13 @@ span.form-control__button-text:nth-child(2),
         &--right {
             padding-top: 0px;
             padding-bottom: 0px;
+            color: $pallete-primary-dark;
+            text-transform: uppercase;
         }
 
         &--left {
-            border-left: 2px solid rgba(255, 255, 255, .5);
+            border-left: 2px solid $pallete-secondary;
+            ;
             padding-left: 15px;
 
             @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
@@ -118,12 +127,12 @@ span.form-control__button-text:nth-child(2),
 }
 
 .top-nav-collapse {
-    background-color: $pallete-primary-dark;
+    background-color: $pallete-primary-light;
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: $pallete-primary-dark;
+        background-color: $pallete-secondary-light;
     }
 }
 
