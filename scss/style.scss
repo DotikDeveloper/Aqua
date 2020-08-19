@@ -94,37 +94,39 @@ span.form-control__button-text:nth-child(2),
     width: 100vw;
     background-color: transparent;
     color: $pallete-fonts--dark;
-    transition: all .15s ease-in 0.1s       ;
-        -webkit-transition: all .15s ease-in 0.1s       ;
-        -moz-transition: all .15s ease-in 0.1s       ;
-        -ms-transition: all .15s ease-in 0.1s       ;
-        -o-transition: all .15s ease-in 0.1s       ;
+    transition: all .15s ease-in 0.1s;
+    -webkit-transition: all .15s ease-in 0.1s;
+    -moz-transition: all .15s ease-in 0.1s;
+    -ms-transition: all .15s ease-in 0.1s;
+    -o-transition: all .15s ease-in 0.1s;
+
     & a {
         color: $pallete-fonts--dark;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
 
 
-        &:hover{
-        color: $pallete-fonts;
-        opacity: 0.95;
+        &:hover {
+            color: $pallete-secondary;
+            opacity: 0.95;
         }
     }
 
     &-text {
         &--right {
             padding-top: 0px;
-            padding-bottom: 0px;            
+            padding-bottom: 0px;
             text-transform: uppercase;
-            color: $pallete-fonts--dark;            
+            color: $pallete-fonts--dark;
         }
 
         &--left {
             border-left: 2px solid $pallete-fonts;
             color: $pallete-fonts;
             padding-left: 15px;
+
             //width: 200px;
-            & p{
+            & p {
                 margin: 0 15px 0 0;
                 padding: 0;
             }
@@ -144,6 +146,7 @@ span.form-control__button-text:nth-child(2),
 
     & .fas {
         color: $pallete-fonts--dark;
+
         @media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
             margin-left: 10px;
             font-size: 24px;
@@ -157,11 +160,15 @@ span.form-control__button-text:nth-child(2),
 
 .top-nav-collapse {
     background-color: $pallete-primary-light;
-    & a, .nav-item a, .fas{
+
+    & a,
+    .nav-item a,
+    .fas {
         color: #fff;
     }
-    & a:hover{
-        color: $pallete-fonts--dark;
+
+    & a:hover {
+        color: $pallete-secondary;
     }
 
 
@@ -215,6 +222,10 @@ header,
 
         & h1 {
             color: $pallete-fonts--dark;
+
+            @media (max-width: 768px) {
+                margin-top: 95px;
+            }
         }
     }
 
@@ -283,7 +294,7 @@ header,
     }
 
     &__check {
-        color: $pallete-secondary-light;
+        color: $pallete-secondary;
         font-size: 38px;
 
         @media only screen and (min-device-width: 374px) and (max-device-width: 766px) {
