@@ -389,9 +389,11 @@ header,
         font-family: 'Playfair Display', serif;
         font-size: 24px;
     }
+
     &__clean img {
         max-width: 50px;
     }
+
     &__economy img {
         max-width: 50px;
     }
@@ -1068,8 +1070,9 @@ header,
 
 
     &__card {
-        border: 1px solid $pallete-secondary;
-        background-color: $pallete-secondary-light;
+        border: 1px solid rgba(255, 255, 255, 0);
+        background-color: $pallete-primary-light;
+        opacity: 0.85;
         transition: all .35s ease-out 0.25s;
         -webkit-transition: all .35s ease-out 0.25s;
         -moz-transition: all .35s ease-out 0.25s;
@@ -1079,6 +1082,10 @@ header,
         &:hover {
             background-color: $pallete-fonts;
             border: 1px solid $pallete-fonts;
+
+            button {
+                color: $pallete-secondary;
+            }
         }
     }
 
