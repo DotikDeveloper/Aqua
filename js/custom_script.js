@@ -63,3 +63,6 @@ for (const anchor of anchors) {
 $('.carousel').carousel({
 	interval: 3500
 });
+
+//modal ------------------------------------------------------
+
